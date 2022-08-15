@@ -13,7 +13,7 @@ class Piece
  include Mongoid::Document
 
  field :name, type: String
- has_many :parts, class_name: Part, validate: false
+ has_many :parts, class_name: 'Part', validate: false
 
   index({name: 1}, background: true)
 end
